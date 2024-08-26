@@ -7,5 +7,6 @@ routes.get("/users", UserController.getUsers);
 routes.get("/users/:id", UserController.getUserById);
 routes.get("/users/:id/songs", UserController.getSongsByUser);
 routes.get("/users/:id/genres", UserController.getGenresByUser);
+routes.get("/users/:id/genre", UserController.getFavGenreByUser);
 
 export default routes;
