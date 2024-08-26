@@ -1,4 +1,3 @@
-// import { autor } from "../models/Autor.js";
 import data from '../../data/music.json' assert { type: "json" };
 
 class MusicController {

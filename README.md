@@ -4,7 +4,7 @@ Instale o projeto com `npm install`.
 
 ## Endpoints
 
-Execute `npm start` na pasta-raiz do projeto. Certifique-se que a porta `3000` esteja disponível.
+Execute `npm run dev` na pasta-raiz do projeto. Certifique-se que a porta `3000` esteja disponível.
 
 Este projeto disponibiliza os seguintes endpoints:
 `http://localhost:3000/music`
