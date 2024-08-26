@@ -1,10 +1,11 @@
-import data from '../../data/users.json' assert { type: "json" };
+import Users from '../models/Users.js';
 
 class UserController {
 
   static async getUsers (req, res) {
     try {
-      res.status(200).json(data);
+      const usersList = Users.getUsers()
+      res.status(200).json(usersList);
     } catch (error) {
       res.status(500).json({ message: error.message });
     }
@@ -13,7 +14,7 @@ class UserController {
   static async getUserById (req, res) {
     try {
       const id = req.params.id;
-      const user = data.users.find((user) => user.id === id);
+      const user = Users.getUserById(id);
       res.status(200).json(user);
     } catch (error) {
       res.status(500).json({ message: error.message });
