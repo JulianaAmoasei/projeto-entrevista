@@ -15,9 +15,9 @@ Este projeto disponibiliza os seguintes endpoints:
 ## Requisitos
 
 * Requisito 1: Informada uma pessoa, exibir todas as músicas que ela ouviu
-* Requisito 2: Informada uma pessoa, mostrar a música favorita dela
-* Requisito 3: Informada uma pessoa, listar todos estilos musicais que ela ouviu
-* Requisito 4: Informada uma música, exibir as 10 primeiras pessoas que mais ouviram a mesma
+* Requisito 2: Informada uma pessoa, listar todos estilos musicais que ela ouviu
+* Requisito 3: Informada uma pessoa, exibir seu estilo musical preferido
+* Requisito 4: Informada uma música, exibir quem ouviu
 
 ### Requisitos Extras
 

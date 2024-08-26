@@ -19,6 +19,20 @@ class Users {
       return music.title;
     })
   }
+
+  static getAllGenres(id) {
+    const user = this.getUserById(id);
+
+    const obj = {};
+
+    user.listened.forEach((song) => {
+      const music = musicList.music.find((music) => music.id === song.songId);
+      obj[music.genre] = (obj[music.genre] || 0) + 1;
+    })
+
+    const prefGenre = Object.entries(obj).sort(([,a],[,b]) => b-a)
+    return prefGenre[0][0];
+  }
 }
 
 export default Users;
